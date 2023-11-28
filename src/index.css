@@ -15,8 +15,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: var(--primary-font-family);
-  /* font-family: "All Round Gothic Font Family"; */
   background-color: var(--background-color);
+  color: var(--primary-text-color);
 }
 
 code {
@@ -57,7 +57,7 @@ li {
 
 a {
   font-family: var(--primary-font-family);
-  font-size: 12px;
+  font-size: var(--primary-font-size);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
