@@ -1,0 +1,28 @@
+.header {
+  padding-top: 36px;
+  padding-bottom: 146px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 11px;
+}
+
+.logo_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //   gap: 4px;
+}
+
+.burger_btn {
+  height: 39px;
+  padding: 4px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 500px;
+  background: #dcefd8;
+
+  border: none;
+}
