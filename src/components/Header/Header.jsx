@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./Header.module.scss";
 import Logo from "../../shared/icon/Logo.jsx";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import Menu from "../../shared/icon/Menu.jsx";
 
 const Header = () => {
@@ -14,9 +15,21 @@ const Header = () => {
         </Link>
       </div>
 
-      <button className={styles.burger_btn}>
-        <Menu />
-      </button>
+      <div className={styles.wrapper}>
+        <button className={styles.burger_btn}>
+          <Menu />
+        </button>
+
+        <ScrollLink
+          to="#"
+          smooth={true}
+          duration={500}
+          className={styles.get_touch}
+        >
+          Get in touch
+          <span className={styles.touch}></span>
+        </ScrollLink>
+      </div>
     </header>
   );
 };

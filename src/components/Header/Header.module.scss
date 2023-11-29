@@ -26,3 +26,48 @@
 
   border: none;
 }
+
+.get_touch {
+  display: none;
+  border-radius: 500px;
+  background: var(--accent-color);
+  padding: 10px 16px;
+
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+  cursor: pointer;
+}
+
+@keyframes changeSize {
+  0% {
+    transform: scale(1); /* Початковий розмір */
+  }
+  100% {
+    transform: scale(1.2); /* Кінцевий розмір */
+  }
+}
+
+.touch::after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-color: #173d33;
+  display: flex;
+  border-radius: 50%;
+  margin-left: 12px;
+  animation: changeSize 2s infinite alternate;
+}
+
+@media screen and (min-width: 768px) {
+  .get_touch {
+    display: flex;
+    align-items: center;
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+}

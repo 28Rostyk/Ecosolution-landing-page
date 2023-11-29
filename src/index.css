@@ -58,6 +58,8 @@ li {
 a {
   font-family: var(--primary-font-family);
   font-size: var(--primary-font-size);
+  color: var(--primary-text-color);
+  letter-spacing: -0.64px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

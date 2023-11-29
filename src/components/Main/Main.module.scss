@@ -1,6 +1,8 @@
 @import "../../theme/abstract/veriables";
 
-.main {
+.content_wrapper {
+  border-bottom: 1px solid var(--accent-color);
+  padding-bottom: 24px;
 }
 
 .title {
@@ -20,6 +22,7 @@
   line-height: normal;
   letter-spacing: -0.64px;
   margin-bottom: 24px;
+  max-width: 320px;
 }
 
 .scroll_link {
@@ -45,4 +48,74 @@
   padding: 8px;
   background-color: var(--accent-color);
   margin-left: 11px;
+}
+
+.info_wrapper {
+  padding-top: 24px;
+  padding-bottom: 8px;
+}
+
+.map_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mail_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .content_wrapper {
+    display: flex;
+    gap: 65px;
+  }
+
+  .title {
+    max-width: 300px;
+
+    font-size: 48px;
+    line-height: 48px; /* 100% */
+  }
+
+  .text {
+    min-width: 344px;
+  }
+
+  .scroll_link {
+    margin: 0;
+  }
+
+  .copy {
+    display: block;
+  }
+
+  .info_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .content_wrapper {
+    justify-content: space-between;
+  }
+
+  .title {
+    max-width: 485px;
+
+    font-size: 64px;
+    line-height: 64px; /* 100% */
+  }
+
+  .text {
+    min-width: 363px;
+  }
 }
