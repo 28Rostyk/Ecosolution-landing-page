@@ -4,6 +4,7 @@ import Header from "../Header/Header";
 import styles from "./App.module.scss";
 import Main from "../Main/Main";
 import About from "../About/About";
+import Electricity from "../Electricity/Electricity";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <main>
         <Main />
         <About />
+        <Electricity />
       </main>
     </div>
   );

@@ -8,8 +8,8 @@ const ResponseImage = () => {
   return (
     <picture>
       <source media="(max-width: 768px)" srcSet={smallImage} />
-      <source media="(max-width: 1440px)" srcSet={mediumImage} />
-      <source media="(min-width: 1440px)" srcSet={largeImage} />
+      <source media="(max-width: 1280px)" srcSet={mediumImage} />
+      <source media="(min-width: 1280px)" srcSet={largeImage} />
       <img
         src={smallImage} // Основне зображення для пристроїв з невеликим екраном
         alt="Wind turbine"

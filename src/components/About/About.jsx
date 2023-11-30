@@ -37,8 +37,8 @@ const About = () => {
 
         <li className={styles.value_cart_img}>
           <picture>
-            <source media="(max-width: 1440px)" srcSet={firstMediumImage} />
-            <source media="(min-width: 1440px)" srcSet={firstLargeImage} />
+            <source media="(max-width: 1280px)" srcSet={firstMediumImage} />
+            <source media="(min-width: 1280px)" srcSet={firstLargeImage} />
             <img
               src={firstMediumImage} // Основне зображення для пристроїв з невеликим екраном
               alt="Wind turbine"
@@ -49,8 +49,8 @@ const About = () => {
       <ul className={`${styles.values_wrapper} ${styles.second_row}`}>
         <li className={styles.value_cart_img}>
           <picture>
-            <source media="(max-width: 1440px)" srcSet={secondMediumImage} />
-            <source media="(min-width: 1440px)" srcSet={secondLargeImage} />
+            <source media="(max-width: 1280px)" srcSet={secondMediumImage} />
+            <source media="(min-width: 1280px)" srcSet={secondLargeImage} />
             <img
               src={secondMediumImage} // Основне зображення для пристроїв з невеликим екраном
               alt="Wind turbine"
