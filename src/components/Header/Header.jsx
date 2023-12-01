@@ -5,6 +5,7 @@ import Logo from "../../shared/icon/Logo.jsx";
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import Menu from "../../shared/icon/Menu.jsx";
+import ArrowDown from "../../shared/icon/ArrowDown.jsx";
 
 const Header = () => {
   return (
@@ -27,7 +28,9 @@ const Header = () => {
           className={styles.get_touch}
         >
           Get in touch
-          <span className={styles.touch}></span>
+          <div className={styles.touch}>
+            <ArrowDown />
+          </div>
         </ScrollLink>
       </div>
     </header>

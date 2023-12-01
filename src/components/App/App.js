@@ -5,6 +5,7 @@ import styles from "./App.module.scss";
 import Main from "../Main/Main";
 import About from "../About/About";
 import Electricity from "../Electricity/Electricity";
+import Cases from "../Cases/Cases";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Main />
         <About />
         <Electricity />
+        <Cases />
       </main>
     </div>
   );

@@ -38,6 +38,15 @@
 
   line-height: 18px; /* 112.5% */
   letter-spacing: -0.64px;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.scroll_link:hover,
+.scroll_link:focus {
+  background-color: #173d33;
+  color: var(--accent-color);
 }
 
 .arrowWrapper {

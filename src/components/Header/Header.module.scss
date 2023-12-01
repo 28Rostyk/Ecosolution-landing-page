@@ -25,6 +25,13 @@
   background: #dcefd8;
 
   border: none;
+
+  transition: background-color 0.3s ease;
+}
+
+.burger_btn:hover,
+.burger_btn:focus {
+  background-color: var(--accent-color);
 }
 
 .get_touch {
@@ -37,6 +44,14 @@
   line-height: normal;
   letter-spacing: -0.64px;
   cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.get_touch:hover,
+.get_touch:focus {
+  background-color: #173d33;
+  color: var(--accent-color);
 }
 
 @keyframes changeSize {
@@ -48,21 +63,29 @@
   }
 }
 
-.touch::after {
-  content: "";
+.touch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #173d33;
+  border-radius: 50%;
   width: 14px;
   height: 14px;
-  background-color: #173d33;
-  display: flex;
-  border-radius: 50%;
-  margin-left: 12px;
+  transition: all 0.3s ease;
+
   animation: changeSize 2s infinite alternate;
+}
+
+.get_touch:hover .touch,
+.get_touch:focus .touch {
+  background-color: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {
   .get_touch {
     display: flex;
     align-items: center;
+    gap: 12px;
   }
 
   .wrapper {

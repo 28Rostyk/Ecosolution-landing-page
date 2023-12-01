@@ -1,6 +1,9 @@
 .about {
   padding-top: 36px;
   padding-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title {
@@ -152,6 +155,7 @@
   .about {
     padding-top: 120px;
     padding-bottom: 120px;
+    display: block;
   }
   .text_wrapper {
     justify-content: space-between;
