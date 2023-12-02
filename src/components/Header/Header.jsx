@@ -3,9 +3,9 @@ import React from "react";
 import styles from "./Header.module.scss";
 import Logo from "../../shared/icon/Logo.jsx";
 import { Link } from "react-router-dom";
-import { Link as ScrollLink } from "react-scroll";
+
 import Menu from "../../shared/icon/Menu.jsx";
-import ArrowDown from "../../shared/icon/ArrowDown.jsx";
+import BtnGetTouch from "../../shared/component/BtnGetTouch.jsx";
 
 const Header = () => {
   return (
@@ -20,18 +20,7 @@ const Header = () => {
         <button className={styles.burger_btn}>
           <Menu />
         </button>
-
-        <ScrollLink
-          to="#"
-          smooth={true}
-          duration={500}
-          className={styles.get_touch}
-        >
-          Get in touch
-          <div className={styles.touch}>
-            <ArrowDown />
-          </div>
-        </ScrollLink>
+        <BtnGetTouch />
       </div>
     </header>
   );
