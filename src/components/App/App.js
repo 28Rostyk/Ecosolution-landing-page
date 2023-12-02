@@ -8,6 +8,7 @@ import Electricity from "../Electricity/Electricity";
 import Cases from "../Cases/Cases";
 import FAQAccordion from "../FAQ/FAQAccordion ";
 import Contact from "../Contact/Contact";
+import Footer from "../Footer/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Cases />
         <FAQAccordion />
         <Contact />
+        <Footer />
       </main>
     </div>
   );
