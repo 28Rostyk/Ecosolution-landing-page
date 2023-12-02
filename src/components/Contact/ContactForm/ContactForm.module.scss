@@ -40,7 +40,6 @@
     display: flex;
     align-items: center;
 
-    // max-width: 100px;
     border-radius: 500px;
     border: 1px solid #97d28b;
 
@@ -54,6 +53,21 @@
     font-weight: 400;
     line-height: 18px; /* 112.5% */
     letter-spacing: -0.64px;
+
+    &:hover .arrowWrapper,
+    &:focus .arrowWrapper {
+      background-color: #173d33;
+    }
+
+    &:hover svg,
+    &:focus svg {
+      stroke: var(--accent-color);
+    }
+  }
+
+  &_btn svg {
+    stroke: #173d33;
+    transition: all 0.3s ease;
   }
 }
 
@@ -97,6 +111,7 @@
   padding: 8px;
   background-color: var(--accent-color);
   margin-left: 11px;
+  transition: all 0.3s ease;
 }
 
 @media screen and (min-width: 768px) {

@@ -11,7 +11,7 @@ const ArrowUpRight = () => {
     >
       <path
         d="M10.9976 6.98669L21.0125 6.98669L21.0125 17.0017"
-        stroke="#173D33"
+        // stroke="#173D33"
         strokeWidth="1.5"
         strokeMiterlimit="10"
         strokeLinecap="round"
@@ -19,7 +19,7 @@ const ArrowUpRight = () => {
       />
       <path
         d="M6.98901 21.0109L20.8731 7.12688"
-        stroke="#173D33"
+        // stroke="#173D33"
         strokeWidth="1.5"
         strokeMiterlimit="10"
         strokeLinecap="round"

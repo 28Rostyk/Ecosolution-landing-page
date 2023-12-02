@@ -18,7 +18,7 @@ const Footer = () => {
         </Link>
 
         <ScrollLink
-          to="#"
+          to="main"
           smooth={true}
           duration={500}
           className={styles.scroll_link}

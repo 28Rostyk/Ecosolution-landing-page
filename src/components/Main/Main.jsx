@@ -8,7 +8,7 @@ import ResponseImage from "../ResponseImage/ResponseImage";
 
 const Main = () => {
   return (
-    <section className={styles.main}>
+    <section className={styles.main} id="main">
       <div className={styles.content_wrapper}>
         <h1 className={styles.title}>RENEWABLE ENERGY For any task</h1>
         <div className={styles.text_wrapper}>
@@ -19,7 +19,7 @@ const Main = () => {
           </p>
 
           <ScrollLink
-            to="#"
+            to="cases"
             smooth={true}
             duration={500}
             className={styles.scroll_link}

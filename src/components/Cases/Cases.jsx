@@ -23,6 +23,7 @@ import imgSlide4Tablet from "../../images/slide4tablet.jpg";
 import imgSlide5 from "../../images/slideSmall5.jpg";
 import imgSlide5Desk from "../../images/slide5.jpg";
 import imgSlide5Tablet from "../../images/slide5tablet.jpg";
+import { Link } from "react-router-dom";
 
 const Cases = () => {
   const swiperRef = useRef(null);
@@ -54,7 +55,7 @@ const Cases = () => {
   };
 
   return (
-    <section className={styles.cases}>
+    <section className={styles.cases} id="cases">
       <div className={styles.pagination_container}>
         <h2 className={styles.title}>Successful cases of our company</h2>
         <div className={styles.pagination}>
@@ -97,7 +98,7 @@ const Cases = () => {
         }}
       >
         <SwiperSlide>
-          <div className={styles.swipe_card_wrapper}>
+          <Link className={styles.swipe_card_wrapper}>
             <picture>
               <source media="(max-width: 768px)" srcSet={imgSlide1} />
               <source media="(max-width: 1280px)" srcSet={imgSlide1Tablet} />
@@ -121,11 +122,11 @@ const Cases = () => {
                 <p className={styles.description}>July 2023</p>
               </div>
             </div>
-          </div>
+          </Link>
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className={styles.swipe_card_wrapper}>
+          <Link className={styles.swipe_card_wrapper}>
             <picture>
               <source media="(max-width: 768px)" srcSet={imgSlide2} />
               <source media="(max-width: 1280px)" srcSet={imgSlide2Tablet} />
@@ -149,11 +150,11 @@ const Cases = () => {
                 <p className={styles.description}>November 2023</p>
               </div>
             </div>
-          </div>
+          </Link>
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className={styles.swipe_card_wrapper}>
+          <Link className={styles.swipe_card_wrapper}>
             <picture>
               <source media="(max-width: 768px)" srcSet={imgSlide3} />
               <source media="(max-width: 1280px)" srcSet={imgSlide3Tablet} />
@@ -175,10 +176,10 @@ const Cases = () => {
                 <p className={styles.description}>October 2023</p>
               </div>
             </div>
-          </div>
+          </Link>
         </SwiperSlide>
         <SwiperSlide>
-          <div className={styles.swipe_card_wrapper}>
+          <Link className={styles.swipe_card_wrapper}>
             <picture>
               <source media="(max-width: 768px)" srcSet={imgSlide4} />
               <source media="(max-width: 1280px)" srcSet={imgSlide4Tablet} />
@@ -200,10 +201,10 @@ const Cases = () => {
                 <p className={styles.description}>September 2021</p>
               </div>
             </div>
-          </div>
+          </Link>
         </SwiperSlide>
         <SwiperSlide>
-          <div className={styles.swipe_card_wrapper}>
+          <Link className={styles.swipe_card_wrapper}>
             <picture>
               <source media="(max-width: 768px)" srcSet={imgSlide5} />
               <source media="(max-width: 1280px)" srcSet={imgSlide5Tablet} />
@@ -225,7 +226,7 @@ const Cases = () => {
                 <p className={styles.description}>May 2021</p>
               </div>
             </div>
-          </div>
+          </Link>
         </SwiperSlide>
       </Swiper>
     </section>

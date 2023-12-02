@@ -110,6 +110,7 @@
   padding: 16px;
   border-radius: 50%;
   background-color: var(--accent-color);
+  transition: all 0.3s ease;
 }
 
 .description_wrapper {
@@ -125,6 +126,19 @@
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.48px;
+}
+
+.swipe_card_wrapper svg {
+  stroke: #173d33;
+  transition: all 0.3s ease;
+}
+
+.swipe_card_wrapper:hover svg {
+  stroke: var(--accent-color);
+}
+
+.swipe_card_wrapper:hover .svg_wrapper {
+  background-color: #173d33;
 }
 
 @media screen and (min-width: 768px) {

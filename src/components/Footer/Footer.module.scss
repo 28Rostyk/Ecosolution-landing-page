@@ -24,6 +24,23 @@
 
   display: flex;
   align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover,
+  &:focus {
+    background-color: #173d33;
+  }
+}
+
+.arrowWrapper svg {
+  stroke: #173d33;
+  transition: all 0.3s ease;
+}
+
+.arrowWrapper:hover svg,
+.arrowWrapper:focus svg {
+  stroke: var(--accent-color);
 }
 
 .info_wrapper {
