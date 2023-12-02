@@ -7,10 +7,9 @@ const BtnGetTouch = ({ faq }) => {
   console.log(faq);
   return (
     <ScrollLink
-      to="#"
+      to="contact"
       smooth={true}
       duration={500}
-      //   className={`${styles.get_touch}  ${styles.get_touch_faq}`}
       className={faq ? `${styles.get_touch_faq}` : `${styles.get_touch}`}
     >
       Get in touch

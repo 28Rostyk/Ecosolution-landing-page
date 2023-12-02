@@ -6,7 +6,7 @@ const MapLink = () => {
 
   return (
     <a href={mapUrl} target="_blank" rel="noopener noreferrer">
-      79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
+      <address style={{ fontStyle: "normal" }}>{address}</address>
     </a>
   );
 };

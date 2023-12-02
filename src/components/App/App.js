@@ -7,6 +7,7 @@ import About from "../About/About";
 import Electricity from "../Electricity/Electricity";
 import Cases from "../Cases/Cases";
 import FAQAccordion from "../FAQ/FAQAccordion ";
+import Contact from "../Contact/Contact";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Electricity />
         <Cases />
         <FAQAccordion />
+        <Contact />
       </main>
     </div>
   );
