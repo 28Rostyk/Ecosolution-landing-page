@@ -50,6 +50,16 @@
   gap: 16px;
 }
 
+.logo_wrapper svg {
+  fill: #173d33;
+  transition: all 0.3s ease;
+}
+
+.logo_wrapper:hover svg,
+.logo_wrapper:focus svg {
+  fill: var(--accent-color);
+}
+
 @media screen and (min-width: 768px) {
   .footer {
     position: relative;

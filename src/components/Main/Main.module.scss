@@ -1,5 +1,9 @@
 @import "../../theme/abstract/veriables";
 
+.main {
+  padding-top: 200px;
+}
+
 .content_wrapper {
   border-bottom: 1px solid var(--accent-color);
   padding-bottom: 24px;
@@ -99,6 +103,7 @@
 
   .text {
     min-width: 344px;
+    margin-bottom: 45px;
   }
 
   .scroll_link {

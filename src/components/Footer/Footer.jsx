@@ -13,14 +13,16 @@ const Footer = () => {
   return (
     <section className={styles.footer}>
       <div className={styles.footer_logo_wrapper}>
-        <Link>
-          <Logo />
-        </Link>
+        <div className={styles.logo_wrapper}>
+          <Link>
+            <Logo />
+          </Link>
+        </div>
 
         <ScrollLink
           to="main"
           smooth={true}
-          duration={500}
+          duration={2000}
           className={styles.scroll_link}
         >
           <span className={styles.arrowWrapper}>

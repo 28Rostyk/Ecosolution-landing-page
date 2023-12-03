@@ -21,7 +21,7 @@ const Main = () => {
           <ScrollLink
             to="cases"
             smooth={true}
-            duration={500}
+            duration={2000}
             className={styles.scroll_link}
           >
             Learn more

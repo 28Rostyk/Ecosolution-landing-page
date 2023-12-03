@@ -42,7 +42,7 @@ const FAQAccordion = () => {
   }, []);
 
   return (
-    <section className={styles.faq}>
+    <section className={styles.faq} id="faq">
       <div>
         <h2 className={styles.title}>
           Frequently Asked
