@@ -17,15 +17,15 @@ const Contact = () => {
           <li className={styles.contact_list_item}>
             <p className={styles.text}>Phone:</p>
             <div className={styles.wrapper}>
-              <Phone />
               <a className={styles.phone} href="tel:380981234567">
+                <Phone />
                 38 (098) 12 34 567
               </a>
             </div>
 
             <div className={styles.wrapper}>
-              <Phone />
               <a className={styles.phone} href="tel:380981234567">
+                <Phone />
                 38 (098) 12 34 567
               </a>
             </div>
@@ -33,8 +33,8 @@ const Contact = () => {
           <li className={styles.contact_list_item}>
             <p className={styles.text}>E-mail:</p>
             <div className={styles.wrapper}>
-              <Mail />
               <a className={styles.mail} href="mailto:office@ecosolution.com">
+                <Mail />
                 office@ecosolution.com
               </a>
             </div>
@@ -42,8 +42,7 @@ const Contact = () => {
           <li className={styles.contact_list_item}>
             <p className={styles.text}>Address:</p>
             <div className={styles.wrapper}>
-              <Map />
-              <MapLink />
+              <MapLink contact />
             </div>
           </li>
           <li className={styles.contact_list_item}>
