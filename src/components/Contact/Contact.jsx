@@ -3,7 +3,6 @@ import styles from "./Contact.module.scss";
 import Phone from "../../shared/icon/Phone";
 import Mail from "../../shared/icon/Mail";
 import MapLink from "../MapLink/MapLink";
-import Map from "../../shared/icon/Map";
 import Fasebook from "../../shared/icon/Fasebook";
 import Instagram from "../../shared/icon/Instagram";
 import ContactForm from "./ContactForm/ContactForm";

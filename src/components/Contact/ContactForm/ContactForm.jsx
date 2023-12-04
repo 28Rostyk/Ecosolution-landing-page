@@ -8,7 +8,6 @@ import styles from "./ContactForm.module.scss";
 
 const ContactForm = () => {
   const handleSubmit = (values, { setSubmitting }) => {
-    console.log(values);
     setSubmitting(false);
   };
 

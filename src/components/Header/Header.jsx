@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 import styles from "./Header.module.scss";
 import Logo from "../../shared/icon/Logo.jsx";
@@ -15,6 +15,7 @@ import InstagramWhite from "../../shared/icon/InstagramWhite.jsx";
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const overlayRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -61,6 +62,12 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
+  const handleOverlayClick = (e) => {
+    if (overlayRef.current && overlayRef.current.contains(e.target)) {
+      closeMenu();
+    }
+  };
+
   const headerClasses = `${styles.header} ${isScrolled ? styles.scroll : ""}`;
 
   return (
@@ -77,7 +84,11 @@ const Header = () => {
         </button>
 
         {isMenuOpen && (
-          <div className={styles.overlay}>
+          <div
+            className={styles.overlay}
+            onClick={handleOverlayClick}
+            ref={overlayRef}
+          >
             <div className={styles.menu}>
               <div className={styles.container}>
                 <button className={styles.close_btn} onClick={closeMenu}>

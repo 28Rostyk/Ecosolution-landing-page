@@ -4,7 +4,6 @@ import ArrowDown from "../icon/ArrowDown";
 import styles from "./BtnGetTouch.module.scss";
 
 const BtnGetTouch = ({ faq }) => {
-  console.log(faq);
   return (
     <ScrollLink
       to="contact"
